@@ -1,6 +1,7 @@
-.tst{
-    color: aqua;
-}
+a, a:hover {
+    text-decoration: none;
+  }
+  
 
 .header{
     background-color: #D9CBA7;
@@ -43,4 +44,113 @@
 .home-Hero img{
     width: 100%;
     height: 100%;
+}
+
+.top-content{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-color: #F5E8C7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.main-content-header h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    height: 40px;
+}
+
+.main-content-header h1::after{
+    content: '';
+    position: absolute;
+    bottom: -5px; /* テキストからの距離 */
+    left: 0;
+    width: 80%; /* 線の幅 */
+    height: 7px; /* 線の太さ */
+    background-color: #349050; /* 線の色 */
+    left: 50%;          /* 追加：左端を50%に */
+    transform: translateX(-50%);  /* 追加：要素の半分左に移動 */
+}
+
+.main-content-text{
+    padding: 40px 0;
+}
+
+.main-content-text p{
+    text-align: center;
+    line-height: 3;
+    font-size: 1rem;
+}
+
+.main-content-More{
+    display: inline-block;
+    padding: 8px 30px;
+    border: 2px solid #349950;  /* 緑色の枠線 */
+    border-radius: 20px;        /* 角丸 */
+    color: #349950;            /* テキストを緑色に */
+    text-decoration: none;      /* 下線を消す */
+    transition: .3s;           /* ホバーをなめらかに */
+    background-color: #FFFFFF; /* 背景色を白に */
+}
+
+.main-content-More:hover{
+    background-color: #349950; /* 背景色を緑に */
+    color: #FFFFFF;            /* テキストを白に */
+}
+
+.product-Introduction{
+    background-color: #E5E5E5
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2列に均等配置 */
+    gap: 20px;  /* 画像間の隙間 */
+    max-width: 1000px;  /* 必要に応じて調整 */
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  
+  .grid-item {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;  /* 角丸 */
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  /* ホバーエフェクト */
+  .grid-item:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+.home-news{
+    background-color: #F5E8C7;
 }
