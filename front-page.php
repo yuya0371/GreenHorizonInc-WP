@@ -85,6 +85,26 @@
                     <div class="main-content-header">
                         <h1>新着情報</h1>
                     </div>
+                    <div class="home-news-contents">
+                        <?php 
+                        $home_news=array(
+                            'post_type'=>'post',
+                            'posts_per_page'=>10,
+                        );
+                        $home_news_query=new WP_Query($home_news);
+                        if($home_news_query->have_posts(  )):
+                         ?>
+                         <?php 
+                        while($home_news_query->have_posts(  )):
+                            $home_news_query->the_post(  );
+                         ?>
+                         <?php get_template_part( 'template-parts/loop', 'post' ); ?>
+                         <?php
+                         endwhile;
+                         wp_reset_postdata(  );
+                         ?>
+                         <?php endif; ?>
+                    </div>
                 </div>
             </main>
 

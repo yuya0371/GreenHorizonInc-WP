@@ -154,3 +154,29 @@ a, a:hover {
 .home-news{
     background-color: #F5E8C7;
 }
+
+.home-news-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 0 25%;
+    background-color: #FFFFFF;
+}
+
+.module-Article-Item{
+    width: 100%;
+}
+
+.module-Article-Item_Link{
+    display: block;
+    width: 100%;
+}
+
+.module-Article-Item_Body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
