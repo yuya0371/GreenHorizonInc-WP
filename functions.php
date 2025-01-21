@@ -32,4 +32,18 @@ function enqueue_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
+function widgets_init(){
+
+    register_sidebars( 3, 
+    array(
+        'name'=>'フッター%s',
+        'id'=>'footer-widget-area',
+        'description'=>'フッターのサイドバー',
+        'before_widget'=>'<div id="%1$s" class="%2$s">',
+        'after_widget'=>'</div>',
+    )
+    );
+}
+add_action( 'widgets_init','widgets_init' );
+
 ?>

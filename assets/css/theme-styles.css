@@ -153,14 +153,14 @@ a, a:hover {
 
 .home-news{
     background-color: #F5E8C7;
+    padding-bottom: 5%;
 }
 
 .home-news-contents{
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
-    margin: 0 25%;
+    margin: 20px 25%;
     background-color: #FFFFFF;
 }
 
@@ -173,10 +173,43 @@ a, a:hover {
     width: 100%;
 }
 
+.module-Article-Item_Link:hover{
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
 .module-Article-Item_Body{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     width: 100%;
+    padding: 2% 0;
+    position: relative;
+}
+
+.module-Article-Item_Body::after{
+    position: absolute;
+    content: "";
+    width: 90%;    /* 下線の長さ */
+    height: 3px;    /* 下線の太さ */
+    bottom: 10px;  /* 下線の位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px dashed #349050;  /* 破線の設定 */
+}
+
+.module-Article-Item_Body time{
+    padding: 0 2em;
+    color: #000000;
+}
+
+.module-Article-Item_Body h2{
+    padding: 0 1em;
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #349050;
 }
