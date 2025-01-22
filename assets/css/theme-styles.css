@@ -1,7 +1,14 @@
+a{
+    color: #000000;
+}
+
 a, a:hover {
     text-decoration: none;
-  }
-  
+}
+
+ul{
+    list-style: none;
+}
 
 .header{
     background-color: #D9CBA7;
@@ -212,4 +219,23 @@ a, a:hover {
 
 .footer{
     background-color: #349050;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.footer-contents{
+    flex-grow: 1;
+}
+
+.widgettitle{
+    font-size: 1.3rem;
+}
+
+.menu{
+    padding: 0;
 }

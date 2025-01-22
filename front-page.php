@@ -109,19 +109,19 @@
             </main>
             <!-- ここまでメイン -->
              <footer class="footer">
-                <div class="row">
+                <div class="footer-container row">
                     <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
-                        <div class="col-md-4">
+                        <div class="footer-contents col-md-4">
                             <?php dynamic_sidebar( 'footer-widget-area' ); ?>
                         </div>
                     <?php endif; ?>
                     <?php if ( is_active_sidebar( 'footer-widget-area-2' ) ) : ?>
-                        <div class="col-md-4">
+                        <div class="footer-contents col-md-4">
                             <?php dynamic_sidebar( 'footer-widget-area-2' ); ?>
                         </div>
                     <?php endif; ?>
                     <?php if ( is_active_sidebar( 'footer-widget-area-3' ) ) : ?>
-                        <div class="col-md-4">
+                        <div class="footer-contents col-md-4">
                             <?php dynamic_sidebar( 'footer-widget-area-3' ); ?>
                         </div>
                     <?php endif; ?>
