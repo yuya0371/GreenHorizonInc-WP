@@ -4,7 +4,12 @@ function theme_setup(){
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5', array('search-form') );
     add_image_size( 'page_eyechatch', 1000, 610, true );
-    register_nav_menu( 'main-menu', 'メインメニュー' );
+    register_nav_menus( 
+        array(
+            'main-menu'=>'メインメニュー',
+            'sub-menu'=>'サブメニュー',
+        )
+    );
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 

@@ -14,7 +14,7 @@ a, a:hover {
     width: 100%;
 }
 
-.header-Nav_Items ul{
+.header-Nav_Items{
     display: flex;
     justify-content: center;
     align-items: center;
