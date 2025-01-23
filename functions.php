@@ -22,7 +22,7 @@ function create_products_post_type() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+            'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'thumbnail'),
             'rewrite' => array('slug' => 'products'),
         )
     );

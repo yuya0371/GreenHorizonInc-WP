@@ -1,2 +1,0 @@
-taxonomy-product_category-daily_necessities.php
-taxonomy-product_category/daily_necessities
