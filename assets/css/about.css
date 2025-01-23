@@ -1,0 +1,44 @@
+.about-container{
+    background-color: #F5E8C7;
+    padding-bottom: 70px;
+}
+
+.content-Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.wp-block-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.wp-block-heading::after{
+    position: absolute;
+    content: "";
+    width: 20%;    /* 下線の長さ */
+    height: 3px;    /* 下線の太さ */
+    bottom: 5px;  /* 下線の位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid #349050;  /* 破線の設定 */
+}
+
+.wp-block-table{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f7e5b9;
+}
+
+.content-Body p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    text-align: center;
+}
