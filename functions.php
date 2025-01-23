@@ -13,6 +13,40 @@ function theme_setup(){
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 
+function create_products_post_type() {
+    register_post_type('products',
+        array(
+            'labels' => array(
+                'name' => __('Products'),
+                'singular_name' => __('Product')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+            'rewrite' => array('slug' => 'products'),
+        )
+    );
+}
+add_action('init', 'create_products_post_type');
+
+function create_products_categories() {
+    $labels = array(
+        'name' => _x('Product Categories', 'taxonomy general name'),
+        'singular_name' => _x('Product Category', 'taxonomy singular name'),
+        'menu_name' => __('Product Categories'),
+    );
+    
+    register_taxonomy('product_category', 'products', array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'product-category'),
+    ));
+}
+add_action('init', 'create_products_categories', 0);
+
 function enqueue_scripts(){
     wp_enqueue_script( 'jQuery' );
     wp_enqueue_style(

@@ -23,16 +23,16 @@
             <h1>製品紹介</h1>
         </div>
         <div class="image-grid">
-            <a href="#" class="grid-item">
+            <a href="<?php echo esc_url( get_term_link( 'daily_necessities', 'product_category' ) ); ?>" class="grid-item">
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/daily_necessities.png" alt="日用品">
             </a>
-            <a href="#" class="grid-item">
+            <a href="<?php echo esc_url(get_term_link( 'kitchen_supplies', 'product_category' )); ?>" class="grid-item">
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/kitchen_supplies.png" alt="キッチン用品">
             </a>
-            <a href="#" class="grid-item">
+            <a href="<?php echo esc_url( get_term_link( 'fashion', 'product_category' ) ); ?>" class="grid-item">
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/fashion.png" alt="ファッション">
             </a>
-            <a href="#" class="grid-item">
+            <a href="<?php echo esc_url( get_term_link( 'gadget','product_category' ) ) ?>" class="grid-item">
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/gadget.png" alt="ガジェット">
             </a>
         </div>
