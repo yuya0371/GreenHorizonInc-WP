@@ -12,7 +12,7 @@
             <div class="main-content-text">
                 <p>Green Horizon Inc.は、地球環境に配慮したエコ商品や
                 <br>サービスを企画・販売する企業です。
-                <br>持続可能な未来を目指し、サステナブルなライフスタイルを
+                <br>持続可能な未来を目指し、サステナブルなライフスタイルを 
                 <br>広める活動を行っています。</p>
             </div>
             <a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="main-content-More">詳しくはこちら</a>
