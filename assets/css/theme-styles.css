@@ -10,6 +10,11 @@ ul{
     list-style: none;
 }
 
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .header{
     background-color: #D9CBA7;
     padding: 10px 0;
@@ -240,3 +245,10 @@ ul{
     padding: 0;
 }
 
+.products-List-Wrap{
+    background-color: #E5E5E5;
+}
+
+.module-Article-Product{
+    background-color: #FFFFFF;
+}

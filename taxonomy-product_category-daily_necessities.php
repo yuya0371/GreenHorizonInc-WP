@@ -1,6 +1,6 @@
 <?php get_header(  ); ?>
 <main class="main">
-    <div class="main-Contents-Wrap">
+    <div class="main-Contents-Wrap container-fluid">
             <div class="home-Hero">
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/dailyHero.png" alt="">
             </div>
@@ -16,14 +16,16 @@
                     <br>機能性とエコロジーを両立させることで、地球に優しいライフスタイルを提案します。</p>
                 </div>
             </div>
-            <?php if(have_posts(  )): ?>
-                <?php 
-                while(have_posts(  )):
-                    the_post(  );
-                ?>
-                    <?php get_template_part( 'template-parts/loop', 'products' ); ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
+            <div class="products-List-Wrap row">
+                <?php if(have_posts(  )): ?>
+                    <?php 
+                    while(have_posts(  )):
+                        the_post(  );
+                    ?>
+                        <?php get_template_part( 'template-parts/loop', 'products' ); ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
     </div>
 </main>
 
