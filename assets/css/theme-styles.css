@@ -245,10 +245,31 @@ ul{
     padding: 0;
 }
 
-.products-List-Wrap{
+.products-List-Container{
     background-color: #E5E5E5;
 }
 
-.module-Article-Product{
+.products-List-Wrap{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.module-Article-Product_Wrap{
     background-color: #FFFFFF;
+    padding: 8%;
+    margin-bottom: 10px;
+}
+
+.module-Article-Product_Img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.module-Article-Product_Img img{
+    width: 100%;
+    height: 90%;
 }
