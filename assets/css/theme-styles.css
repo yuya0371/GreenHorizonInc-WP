@@ -284,7 +284,26 @@ ul{
 }
 
 .product-Detail-Container{
-    padding: 10% 15%;
+    padding: 5% 3%;
     background-color: rgba(255, 255, 255, 0.6);
-    margin: 30px 20%;
+    margin: 30px 10%;
+}
+
+.product-Detail-Container article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-Detail-Text{
+    padding: 0 5%;
+}
+
+.product-Detail-Text h1{
+    font-size: 1.5rem;
+}
+
+.product-Detail-Text p{
+    font-size: 0.7rem;
+    line-height: 2;
 }
