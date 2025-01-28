@@ -278,12 +278,16 @@ ul{
     height: 250px;
 }
 
-.single-Product-Wrap{
+.single-Product-Wrap,
+.single-Blog-Wrap{
     background-color: #F5E8C7;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.product-Detail-Container{
+.product-Detail-Container,
+.single-Blog-Container{
     padding: 5% 3%;
     background-color: rgba(255, 255, 255, 0.6);
     margin: 30px 10%;
@@ -306,4 +310,9 @@ ul{
 .product-Detail-Text p{
     font-size: 0.7rem;
     line-height: 2;
+}
+
+.single-Blog-EyeCatch img{
+    max-width: 100%;
+    height: auto;
 }
