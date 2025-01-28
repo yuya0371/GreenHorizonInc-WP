@@ -47,6 +47,11 @@ function create_products_categories() {
 }
 add_action('init', 'create_products_categories', 0);
 
+function custom_excerpt_more($more) {
+    return ' <a class="read-more" href="' . get_permalink(get_the_ID()) . '">...続きを読む</a>';
+  }
+add_filter('excerpt_more', 'custom_excerpt_more');
+
 function enqueue_scripts(){
     wp_enqueue_script( 'jQuery' );
     wp_enqueue_style(

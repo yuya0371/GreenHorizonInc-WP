@@ -250,7 +250,7 @@ ul{
 }
 
 .products-List-Wrap{
-    padding: 10%;
+    padding: 10% 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,4 +272,8 @@ ul{
 .module-Article-Product_Img img{
     width: 100%;
     height: 90%;
+}
+
+.module-Article-Product_Body{
+    height: 250px;
 }

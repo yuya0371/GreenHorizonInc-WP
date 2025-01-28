@@ -10,8 +10,8 @@
             </div>
             <div class="module-Article-Product_container">
                 <div class="module-Article-Product_Body">
-                <time class="col-4" datetime="<?php echo get_the_date( 'Y-m-d' ); ?>"><?php echo get_the_date(  ); ?></time>
-                    <h2 class="module-Article_Product_Title col-8 "><?php the_title(  ); ?></h2>
+                    <h2 class="module-Article_Product_Title"><?php the_title(  ); ?></h2>
+                    <?php the_excerpt(  ); ?>
                 </div>
             </div>
         </a>
