@@ -277,3 +277,14 @@ ul{
 .module-Article-Product_Body{
     height: 250px;
 }
+
+.single-Product-Wrap{
+    background-color: #F5E8C7;
+    display: flex;
+}
+
+.product-Detail-Container{
+    padding: 10% 15%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 30px 20%;
+}
