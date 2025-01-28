@@ -28,6 +28,19 @@
                             </div>
                             <?php endif?>
                             <?php the_content(  ); ?>
+                            <footer class="content-Blog-Footer">
+                                <?php
+                                the_tags( ' <ul class="content-Tags" aria-label="タグ"><li> ', '</li><li>', ' </li></ul> ' );
+                                ?>
+                                <nav class="content-Blog-Nav" aria-label="前後の記事">
+                                    <div class="content-Blog-Nav_Prev">
+                                        <?php previous_post_link( '&lt;%link' ); ?>
+                                    </div>
+                                    <div class="content-Blog-Nav_Next">
+                                        <?php next_post_link( '%link &gt;' ); ?>
+                                    </div>
+                                </nav>
+                            </footer>
                     </article>
                 <?php endwhile; ?>
             <?php endif; ?> 

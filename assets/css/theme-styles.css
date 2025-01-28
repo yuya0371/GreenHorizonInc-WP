@@ -286,8 +286,7 @@ ul{
     align-items: center;
 }
 
-.product-Detail-Container,
-.single-Blog-Container{
+.product-Detail-Container{
     padding: 5% 3%;
     background-color: rgba(255, 255, 255, 0.6);
     margin: 30px 10%;
@@ -312,7 +311,33 @@ ul{
     line-height: 2;
 }
 
+.single-Blog-Container{
+    padding: 5% 5%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 30px 20%;
+}
+
+.single-Blog-Title{
+    font-size: 1.5rem;
+}
+
 .single-Blog-EyeCatch img{
     max-width: 100%;
     height: auto;
+    padding: 15px 0;
+}
+
+.single-Blog-Body p{
+    padding: 5% 0;
+}
+
+.content-Blog-Nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.content-Blog-Nav  a{
+    margin: 0 10px;
 }
