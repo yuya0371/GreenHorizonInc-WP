@@ -13,6 +13,20 @@ function theme_setup(){
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 
+// 投稿アーカイブのスラッグと名称を変更
+function post_has_archive($args, $post_type) {
+    if ('post' == $post_type) {
+        $args['rewrite'] = true;
+        $args['has_archive'] = 'news'; // ここでスラッグを設定
+        $args['labels'] = array(
+            'name' => 'ニュース' // ここで名称を設定
+        );
+    }
+    return $args;
+}
+add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+
 function create_products_post_type() {
     register_post_type('products',
         array(

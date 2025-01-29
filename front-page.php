@@ -45,21 +45,20 @@
             <?php 
             $home_news=array(
                 'post_type'=>'post',
-                'posts_per_page'=>10,
+                'posts_per_page'=>5,
             );
             $home_news_query=new WP_Query($home_news);
             if($home_news_query->have_posts(  )):
                 ?>
-                <?php 
-            while($home_news_query->have_posts(  )):
-                $home_news_query->the_post(  );
-                ?>
-                <?php get_template_part( 'template-parts/loop', 'post' ); ?>
-                <?php
-                endwhile;
-                wp_reset_postdata(  );
-                ?>
-                <?php endif; ?>
+                <?php while($home_news_query->have_posts(  )):
+                    $home_news_query->the_post(  );
+                    ?>
+                    <?php get_template_part( 'template-parts/loop', 'post' ); ?>
+                <?php endwhile;
+                    wp_reset_postdata(  );
+                    ?>
+            <?php endif; ?>
+            <a href="<?php echo esc_url(home_url( 'news' )); ?>" class="home-News-More_Link">もっと見る</a>
         </div>
     </div>
 </main>
