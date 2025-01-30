@@ -3,7 +3,7 @@ function theme_setup(){
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5', array('search-form') );
-    add_image_size( 'page_eyechatch', 1000, 610, true );
+    add_image_size( 'archive_thumbnail', 300, 0, false );
     register_nav_menus( 
         array(
             'main-menu'=>'メインメニュー',

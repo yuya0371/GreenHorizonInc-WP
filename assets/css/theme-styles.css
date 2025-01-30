@@ -360,3 +360,60 @@ ul{
 .content-Blog-Nav  a{
     margin: 0 10px;
 }
+
+.archive-Blog-Wrap{
+    background-color: #F5E8C7;
+    padding-bottom: 1px;
+}
+
+.archive-Blog-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 20px 13%;
+    background-color: #FFFFFF;
+}
+
+.module-Article-Blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    position: relative;
+}
+
+.module-Article-Blog::after{
+    position: absolute;
+    content: "";
+    width: 90%;    /* 下線の長さ */
+    height: 3px;    /* 下線の太さ */
+    bottom: 10px;  /* 下線の位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px dashed #349050;  /* 破線の設定 */
+}
+
+.module-Article-Blog-Img img{
+    /* width: 300px;
+    height: auto; */
+    padding: 10px;
+}
+
+.module-Article-Blog-Body{
+    padding: 0 5%;
+}
+
+.module-Article-Blog-Title{
+    font-size: 1.5rem;
+}
+
+.module-Article-Blog-Meta{
+    display: flex;
+    padding-left: 0;
+}
+
+.module-Article-Blog-Meta li{
+    padding-right: 10px;
+}
