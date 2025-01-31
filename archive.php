@@ -23,7 +23,6 @@
             <?php endwhile; ?>
             <?php get_template_part( 'template-parts/parts','pagination' ); ?>
             <?php endif; ?>
-
         </div>
     </div>
 </main>
