@@ -417,3 +417,57 @@ ul{
 .module-Article-Blog-Meta li{
     padding-right: 10px;
 }
+
+
+
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-numbers {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.25rem;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .page-numbers:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .page-numbers.current {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .prev, .next {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
