@@ -248,12 +248,32 @@ ul{
 .footer-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px 10%;
+    align-items: flex-start;
+    padding: 10px 30%;
 }
 
 .footer-contents{
     flex-grow: 1;
+}
+
+.wp-block-page-list{
+    padding-left: 0;
+}
+
+.wp-block-pages-list__item__link{
+    font-size: 0.7rem;
+}
+
+.menu-item a{
+    font-size: 0.7rem;
+}
+
+.wp-block-latest-posts__post-title{
+    font-size: 0.7rem;
+}
+
+.wp-block-heading{
+    font-size: 1rem;
 }
 
 .widgettitle{

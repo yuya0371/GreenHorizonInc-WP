@@ -18,7 +18,7 @@
         <div class="content-Wrap">
             <header class="header">
                 <div class="header-Icon">
-                    <a class="header-Icon-Link" href="#">
+                    <a class="header-Icon-Link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/Logo.png" alt="">
                     </a>
                 </div>
