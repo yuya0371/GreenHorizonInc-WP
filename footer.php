@@ -1,4 +1,3 @@
-
 <footer class="footer">
                 <div class="footer-container row">
                     <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
